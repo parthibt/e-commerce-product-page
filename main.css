@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+   
+--primary-Orange: hsl(26, 100%, 55%);
+--primary-PaleOrange: hsl(25, 100%, 94%);
+--Very-vark-blue: hsl(220, 13%, 13%);
+--Dark-grayish-blue: hsl(219, 9%, 45%);
+--Grayish-blue: hsl(220, 14%, 75%);
+--Light-grayish-blue: hsl(223, 64%, 98%);
+--White: hsl(0, 0%, 100%)
+}
+body{
+    background: var(--White);
+    margin: 1em;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+
+
+
+
+img{
+    max-width: 100%;
+}
+
+/*navigation menu*/
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: block;
+    margin-left: 10px;
+}
+.cart-icon{
+    width: 100%;
+    cursor: pointer;
+}
+.notifi{
+    width: 13px;
+    height: 13px;
+    background: var(--primary-Orange);
+    border-radius: 50%;
+    color: var(--White);
+    position: absolute;
+    left: 68%;
+   
+}
+#notifi{
+    text-align: center;
+    font-size: 14px;
+    margin-top: -1px;
+}
+.person{
+    width: 50px;
+    margin-right: 10px;
+}
+.nav{
+    display: none;
+}
+
+
+.left-click{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 40%;
+    left: 50px;
+    background-color: var(--White);
+    border-radius: 50%;
+    box-shadow: 0 0 20px 5px hsla(0, 0%, 0%, 0.11);
+    cursor: pointer;
+}
+.left-click img{
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.images{
+    width: 300px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.snaeaker{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: var(--primary-Orange);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.text{
+    width: 300px;
+    margin: auto;
+    font-size: 15px;
+}
+.text h1{
+    width: 240px;
+    letter-spacing: 0;
+    margin: 15px 0;
+    color: var(--Very-vark-blue);
+}
+.para{
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 20px;
+}
+.number{
+    width: 300px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.price{
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--Very-vark-blue);
+ 
+}
+.percentage{
+    margin-left: 25px;
+    color: var(--primary-Orange);
+    font-weight: bold;
+}
+.offer{
+    color: var(--Dark-grayish-blue);
+}

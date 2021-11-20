@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>E commerce product page</title>
+</head>
+<body>
+    <header class="head">
+        <div class="menu">
+            <img class="menu-icon" src="images/icon-menu.svg" alt="">
+        </div>
+        <div class="log">
+            <img class="log-text" src="/images/logo.svg" alt="">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li> <a href="#">collections</a></li>
+                <li> <a href="#">Menu</a></li>
+                <li> <a href="#">Women</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-image">
+            <div class="notifi"> <p id="notifi"></p></div>
+            <img class="cart-icon" src="/images/icon-cart.svg" alt="">
+        </div>
+        <div class="photo">
+            <img class="person" src="/images/image-avatar.png" alt="">
+        </div>
+    </header>
+    <section>
+        <div class="images">
+            <div class="left-click">
+                <img src="/images/icon-previous.svg" alt="">
+            </div>
+            <div class="right-click"></div>
+            <img src="/images/image-product-1.jpg" alt="">
+        </div>
+        <div class="text">
+            <p class="snaeaker">sneaker company</p>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p class="para">
+                 These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+            </p>
+            <div class="number">
+                <div>
+                    <p class="price">$125.00  <span class="percentage">50%</span></p>
+                    <p class="percent"></p>
+                </div>
+                <div>
+                    <p class="offer">$250.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="increment">
+            <button class="btn negative"><img src="/images/icon-minus.svg" alt=""></button>
+            <input type="text" class="value" value="1">
+            <button id="postive" class="btn postive">
+                <img src="/images/icon-plus.svg" alt="">
+            </button>
+        </div>
+        <div class="add">
+            <button class="cart">            <img src="/images/icon-cart.svg" alt="">Add to cart</button>
+        </div>
+        <div class="total">
+
+        </div>
+        
+    </section>
+
+    <script>
+        const negative = document.querySelector('.negative');
+        const postive = document.querySelector('#postive');
+        const numberCount = document.querySelector('input');
+
+        postive.addEventListener('click', () =>{
+            numberCount.value++;
+        });
+        negative.addEventListener('click',()=>{
+          if(numberCount.value === 1){
+              return 1;
+          }else if(numberCount.value >1){
+              numberCount.value--;
+              
+          }
+        });
+
+        const addCart = document.querySelector('.cart');
+        const total = document.querySelector('.total');
+        const notifi = document.querySelector('#notifi');
+        addCart.addEventListener('click',()=>{
+            let number = "$125";
+            let curentValue = numberCount.value;
+            notifi.textContent =curentValue; 
+        let totalPrice = numberCount.value * 125;
+           total.textContent = number + curentValue;
+          
+        });
+
+
+
+    </script>
+    
+</body>
+</html>
