@@ -188,6 +188,7 @@ img{
 }
 
 
+
 /*image-changer*/
 .image-changer{
     width: 280px;
@@ -229,6 +230,8 @@ img{
 }
 
 
+
+
 /*company Name*/
 .snaeaker{
     margin-left: 20px;
@@ -239,6 +242,8 @@ img{
     letter-spacing: 2px;
     font-weight: bold;
 }
+
+
 
 /*para*/
 .text{
@@ -315,6 +320,8 @@ input{
     fill: var(--primary-Orange-opacity);
     
 }
+
+
 
 /*Add cart button*/
 .add{
