@@ -2,17 +2,16 @@
 /*change images*/
 
 .images{
-    width: 400px;
     margin: auto;
     border-radius: 10px;
 }
 .product{
-    width: 375px;
+   max-width: 375px;
     display: block;
     margin: auto;
 }
 .product-images{
-    width: 300px;
+    max-width: 300px;
     display: block;
     margin-top: 10px;
     margin-left: 10px;

@@ -42,6 +42,7 @@ function setImag() {
     return product.setAttribute('src', images[i])
 }
 
+//cartIcon click show no. of purhase shoes
 const cartIcon = document.querySelector('.cart-icon');
 const hover = document.querySelector('.hover');
 
@@ -69,3 +70,17 @@ negative.addEventListener('click',()=>{
       
   }
 });
+
+
+//number product purchase notifi
+
+const round = document.querySelector('.notifi');
+const numberPurchase = document.getElementById('notifi');
+const buttonCart = document.querySelector('.cart');
+
+buttonCart.addEventListener('click',()=>{
+    let seeValue= numberCount.value;
+    round.style.display = 'block';
+    numberPurchase.textContent = seeValue;
+});
+

@@ -16,12 +16,12 @@
 
 /*para*/
 .text{
-    width: 300px;
+   max-width: 300px;
     margin: auto;
     font-size: 15px;
 }
 .text h1{
-    width: 240px;
+    max-width: 240px;
     letter-spacing: 0;
     margin: 15px 0;
     color: var(--Very-vark-blue);

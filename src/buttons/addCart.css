@@ -31,3 +31,20 @@
     font-size: 10px;
 
 }
+
+/*check out*/
+
+.btn-check{
+    padding: 10px 80px;
+    margin: 0 15px;
+    background: var(--primary-Orange);
+    border: 0;
+    border-radius: 8px;
+    font-family: inherit;
+    color: var(--White);
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-check:hover{
+    background: var(--primary-Orange-opacity);
+}
