@@ -1,0 +1,39 @@
+/*image-changer*/
+.image-changer{
+    width: 280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 38%;
+    margin-left: 25px;
+    overflow: hidden;
+}
+.left-click{
+    width: 40px;
+    height: 40px;
+    background: var(--White);
+    border-radius: 50%;
+    box-shadow: 0 0 -10px 5px rgba(0, 0, 0, 0.185);
+    cursor: pointer;
+}
+.path{
+    margin-top: 12px;
+    margin-left: 14px;
+}
+.right-click{
+    width: 40px;
+    height: 40px;
+    background: var(--White);
+    border-radius: 50%;
+    box-shadow: 0 0 -10px 5px rgba(0, 0, 0, 0.185);
+    cursor: pointer;
+
+}
+.left-click:hover .path path{
+    stroke: var(--primary-Orange);
+}
+.right-click:hover .path path{
+    stroke: var(--primary-Orange);
+}

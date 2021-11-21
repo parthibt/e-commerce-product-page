@@ -1,0 +1,28 @@
+
+/*increment buttons*/
+.increment{
+    width: 270px;
+    display: block;
+    margin: 10px auto;
+
+}
+input{
+    text-align: center;
+    width: 200px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-family: inherit;
+    font-weight: bold;
+}
+.btn{
+    border: none;
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;
+}
+.btn:hover .svg use{
+    fill: var(--primary-Orange-opacity);
+    
+}
+

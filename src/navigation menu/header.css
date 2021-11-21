@@ -1,0 +1,14 @@
+
+
+/*header menu*/
+.head{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}

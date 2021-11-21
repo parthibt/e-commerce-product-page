@@ -1,0 +1,33 @@
+
+
+
+/*Add cart button*/
+.add{
+    width: 270px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart{
+    padding: 10px 80px;
+    background: var(--primary-Orange);
+    border: none;
+    border-radius: 5px;
+    color: var(--Light-grayish-blue);
+    font-family: inherit;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: bold;
+}
+.cart:hover{
+    background: var(--primary-Orange-opacity);
+}
+.white path{
+    fill: var(--Light-grayish-blue);
+}
+.white{
+    margin-right: 10px;
+    font-size: 10px;
+
+}

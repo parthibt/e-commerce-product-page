@@ -1,0 +1,28 @@
+{
+  "name": "e-commerce-product-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "myScript.js",
+  "scripts": {
+    "postcss:watch": "postcss src/main.css -o style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parthibt/e-commerce-product-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parthibt/e-commerce-product-page/issues"
+  },
+  "homepage": "https://github.com/parthibt/e-commerce-product-page#readme",
+  "devDependencies": {
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.2",
+    "postcss-import": "^14.0.2"
+  },
+  "dependencies": {
+    "postcss-plugins": "^1.13.1"
+  }
+}

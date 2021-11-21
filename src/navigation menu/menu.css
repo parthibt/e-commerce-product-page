@@ -1,0 +1,49 @@
+/*navigation menu*/
+
+
+
+
+.nav-background{
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--black);
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: all 1.2s;
+}
+
+.close-icon{
+    margin-top: 20px;
+    margin-left: 30px;
+    cursor: pointer;
+
+}
+.nav{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100vh;
+    background: var(--Light-grayish-blue);
+    z-index: 10;
+    transition: all 3s;
+
+}
+.active{
+    transform: translateX(0);
+}
+.nav ul{
+    list-style: none;
+    margin: 50px 0px 0px 40px;
+}
+.nav ul li{
+    margin: 20px 0px;
+}
+.nav a{
+    text-decoration: none;
+    color: var(--very-very-blue);
+    font-weight: bold;
+}
