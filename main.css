@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
+/*primary values*/
 
 *{
     margin: 0;
@@ -23,17 +24,14 @@ body{
     margin: 1em;
     font-family: 'Kumbh Sans', sans-serif;
 }
-
-
-
-
-
-
 img{
     max-width: 100%;
 }
 
-/*navigation menu*/
+
+
+
+/*header menu*/
 .head{
     height: auto;
     display: flex;
@@ -45,10 +43,13 @@ img{
     margin-left: 10px;
     cursor: pointer;
 }
-.cart-icon{
-    width: 100%;
-    cursor: pointer;
-}
+
+
+
+
+/*navigation cart-icon*/
+
+
 .notifi{
     width: 13px;
     height: 13px;
@@ -64,10 +65,50 @@ img{
     font-size: 14px;
     margin-top: -1px;
 }
+.cart-icon{
+    width: 100%;
+    cursor: pointer;
+}
 .person{
     width: 50px;
     margin-right: 10px;
 }
+.hover{
+    width: 240px;
+    height: 180px;
+    background: var(--White);
+    position: absolute;
+    left: 80px;
+    top: 60px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    z-index: 10;
+    display: none;
+}
+.color path{
+    fill: var(--Very-vark-blue);
+}
+.show{
+    display: block;
+}
+.text{
+   font-weight: bold;
+   color: var(--very-very-blue);
+   margin-top: 5px;
+   margin-left: 60px;
+}
+.your-text{
+    text-align: center;
+    margin-top: 30%;
+    color: var(--Dark-grayish-blue);
+    font-size: 14px;
+}
+
+
+
+/*navigation menu*/
+
+
 
 
 .nav-background{
@@ -115,12 +156,39 @@ img{
     font-weight: bold;
 }
 
+/*avatar image*/
+.photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.photo:hover{
+    border: 2px solid var(--primary-Orange);
+}
+
+
+/*change images*/
 
 .images{
     width: 400px;
     margin: auto;
     border-radius: 10px;
 }
+.product{
+    width: 375px;
+    display: block;
+    margin: auto;
+}
+.product-images{
+    width: 300px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+/*image-changer*/
 .image-changer{
     width: 280px;
     margin: auto;
@@ -129,13 +197,8 @@ img{
     align-items: center;
     position: absolute;
     top: 38%;
-    margin-left: 13px;
+    margin-left: 25px;
     overflow: hidden;
-}
-.product{
-    width: 375px;
-    display: block;
-    margin: auto;
 }
 .left-click{
     width: 40px;
@@ -166,7 +229,7 @@ img{
 }
 
 
-
+/*company Name*/
 .snaeaker{
     margin-left: 20px;
     margin-bottom: 10px;
@@ -176,6 +239,8 @@ img{
     letter-spacing: 2px;
     font-weight: bold;
 }
+
+/*para*/
 .text{
     width: 300px;
     margin: auto;
@@ -192,7 +257,12 @@ img{
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.6;
+    font-weight: 500;
 }
+
+
+
+/*price values*/
 .number{
     width: 300px;
     margin: 10px auto;
@@ -211,9 +281,15 @@ img{
     font-weight: bold;
 }
 .offer{
-    color: var(--Dark-grayish-blue);
+    color: var(--Grayish-blue);
     margin-left: -80px;
+    text-decoration: line-through;
 }
+
+
+
+
+/*increment buttons*/
 .increment{
     width: 270px;
     display: block;
@@ -239,6 +315,8 @@ input{
     fill: var(--primary-Orange-opacity);
     
 }
+
+/*Add cart button*/
 .add{
     width: 270px;
     margin: auto;
