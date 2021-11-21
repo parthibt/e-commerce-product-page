@@ -3,7 +3,7 @@
 
 /*Add cart button*/
 .add{
-    width: 270px;
+    max-width: 375px;
     margin: auto;
     display: flex;
     justify-content: center;

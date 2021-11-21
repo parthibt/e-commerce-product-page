@@ -16,7 +16,7 @@
 
 /*para*/
 .text{
-   max-width: 300px;
+   max-width: 375px;
     margin: auto;
     font-size: 15px;
 }
@@ -38,7 +38,7 @@
 
 /*price values*/
 .number{
-    width: 300px;
+    max-width: 375px;
     margin: 10px auto;
     display: flex;
     justify-content: space-between;

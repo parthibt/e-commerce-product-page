@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');/*Add cart button*/.add{
-    width: 270px;
+    max-width: 375px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -259,7 +259,7 @@
     letter-spacing: 2px;
     font-weight: bold;
 }/*para*/.text{
-   max-width: 300px;
+   max-width: 375px;
     margin: auto;
     font-size: 15px;
 }.text h1{
@@ -274,7 +274,7 @@
     line-height: 1.6;
     font-weight: 500;
 }/*price values*/.number{
-    width: 300px;
+    max-width: 375px;
     margin: 10px auto;
     display: flex;
     justify-content: space-between;
