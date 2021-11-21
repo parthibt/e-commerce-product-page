@@ -9,12 +9,14 @@
 :root{
    
 --primary-Orange: hsl(26, 100%, 55%);
+--primary-Orange-opacity: hsla(26, 100%, 55%, 0.678);
 --primary-PaleOrange: hsl(25, 100%, 94%);
 --Very-vark-blue: hsl(220, 13%, 13%);
 --Dark-grayish-blue: hsl(219, 9%, 45%);
 --Grayish-blue: hsl(220, 14%, 75%);
 --Light-grayish-blue: hsl(223, 64%, 98%);
---White: hsl(0, 0%, 100%)
+--White: hsl(0, 0%, 100%);
+--black: hsla(0, 0%, 0%, 0.75);
 }
 body{
     background: var(--White);
@@ -33,6 +35,7 @@ img{
 
 /*navigation menu*/
 .head{
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,6 +43,7 @@ img{
 .menu{
     display: block;
     margin-left: 10px;
+    cursor: pointer;
 }
 .cart-icon{
     width: 100%;
@@ -64,34 +68,105 @@ img{
     width: 50px;
     margin-right: 10px;
 }
+
+
+.nav-background{
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--black);
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: all 1.2s;
+}
+
+.close-icon{
+    margin-top: 20px;
+    margin-left: 30px;
+    cursor: pointer;
+
+}
 .nav{
-    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100vh;
+    background: var(--Light-grayish-blue);
+    z-index: 10;
+    transition: all 3s;
+
+}
+.active{
+    transform: translateX(0);
+}
+.nav ul{
+    list-style: none;
+    margin: 50px 0px 0px 40px;
+}
+.nav ul li{
+    margin: 20px 0px;
+}
+.nav a{
+    text-decoration: none;
+    color: var(--very-very-blue);
+    font-weight: bold;
 }
 
 
+.images{
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+.image-changer{
+    width: 280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 38%;
+    margin-left: 13px;
+    overflow: hidden;
+}
+.product{
+    width: 375px;
+    display: block;
+    margin: auto;
+}
 .left-click{
     width: 40px;
     height: 40px;
-    position: absolute;
-    top: 40%;
-    left: 50px;
-    background-color: var(--White);
+    background: var(--White);
     border-radius: 50%;
-    box-shadow: 0 0 20px 5px hsla(0, 0%, 0%, 0.11);
+    box-shadow: 0 0 -10px 5px rgba(0, 0, 0, 0.185);
     cursor: pointer;
 }
-.left-click img{
-    position: absolute;
-    top: 30%;
-    left: 10px;
+.path{
+    margin-top: 12px;
+    margin-left: 14px;
+}
+.right-click{
+    width: 40px;
+    height: 40px;
+    background: var(--White);
+    border-radius: 50%;
+    box-shadow: 0 0 -10px 5px rgba(0, 0, 0, 0.185);
+    cursor: pointer;
+
+}
+.left-click:hover .path path{
+    stroke: var(--primary-Orange);
+}
+.right-click:hover .path path{
+    stroke: var(--primary-Orange);
 }
 
-.images{
-    width: 300px;
-    display: block;
-    margin: 10px auto;
-    border-radius: 10px;
-}
+
+
 .snaeaker{
     margin-left: 20px;
     margin-bottom: 10px;
@@ -115,6 +190,8 @@ img{
 .para{
     color: var(--Dark-grayish-blue);
     margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
 }
 .number{
     width: 300px;
@@ -135,4 +212,109 @@ img{
 }
 .offer{
     color: var(--Dark-grayish-blue);
+    margin-left: -80px;
+}
+.increment{
+    width: 270px;
+    display: block;
+    margin: 10px auto;
+
+}
+input{
+    text-align: center;
+    width: 200px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-family: inherit;
+    font-weight: bold;
+}
+.btn{
+    border: none;
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;
+}
+.btn:hover .svg use{
+    fill: var(--primary-Orange-opacity);
+    
+}
+.add{
+    width: 270px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart{
+    padding: 10px 80px;
+    background: var(--primary-Orange);
+    border: none;
+    border-radius: 5px;
+    color: var(--Light-grayish-blue);
+    font-family: inherit;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: bold;
+}
+.cart:hover{
+    background: var(--primary-Orange-opacity);
+}
+.white path{
+    fill: var(--Light-grayish-blue);
+}
+.white{
+    margin-right: 10px;
+    font-size: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.model{
+    display: none;
+    margin: auto;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+#caption{
+    position: absolute;
+    top: 50px;
+    left: 80%;
+    color: saddlebrown;
+    font-size: 40px;
+    cursor: pointer;
+}
+#click{
+    cursor: pointer;
+}
+.model-content{
+    width: 300px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+
 }
