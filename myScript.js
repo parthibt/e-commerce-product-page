@@ -46,9 +46,11 @@ function setImag() {
 const cartIcon = document.querySelector('.cart-icon');
 const hover = document.querySelector('.hover');
 
+
 cartIcon.addEventListener('click',()=>{
     hover.classList.toggle('show');
     cartIcon.classList.toggle('color');
+   
 });
 
 
@@ -77,10 +79,36 @@ negative.addEventListener('click',()=>{
 const round = document.querySelector('.notifi');
 const numberPurchase = document.getElementById('notifi');
 const buttonCart = document.querySelector('.cart');
+const yourText = document.querySelector('.your-text');
+const showItems = document.getElementById('show-items');
+const totalPrice = document.querySelector('.total');
+const amount = document.querySelector('.amount');
 
 buttonCart.addEventListener('click',()=>{
     let seeValue= numberCount.value;
     round.style.display = 'block';
     numberPurchase.textContent = seeValue;
+    yourText.style.display = 'none';
+    showItems.style.visibility ='visible';
+    
+    let product = `$125 x ${seeValue}`;
+     
+    let amountProduct = 125 * seeValue;
+    let amountValue = `$${amountProduct}`;
+    
+    totalPrice.textContent = product;
+    amount.textContent = amountValue;
+
+
+
+});
+
+
+//delete the items
+
+const deleteItmes = document.querySelector('.delete');
+deleteItmes.addEventListener('click',()=>{
+    showItems.style.visibility = 'hidden';
+
 });
 
