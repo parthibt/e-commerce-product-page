@@ -47,3 +47,70 @@
     color: var(--very-very-blue);
     font-weight: bold;
 }
+
+@media  screen and (min-width:600px) and (max-width: 1440px) {
+    .nav-background{
+        position: relative;
+        left: 0;
+        top: 0;
+        height: 0;
+        transform: translateX(0);
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .close-icon{
+        display: none;
+    }
+    .nav{
+        width: 0;
+        height: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav ul{
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: center;
+     
+    }
+   .nav ul li{
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 10px;
+      
+    }
+    .nav a{
+        color: var(--Dark-grayish-blue);
+        font-weight: normal;
+        text-transform: capitalize;
+        position: relative;   
+    }
+    .nav a::after{
+        content: '';
+        height: 4px;
+        width: 0;
+        background: var(--primary-Orange);
+        position: absolute;
+        left: 0;
+        bottom: -22px;
+        transition: all 0.3s;
+    }
+    .nav a:hover::after{
+        width: 100%;
+
+    }
+    .nav a:hover{
+        color: var(--very-very-blue);
+    }
+    
+}

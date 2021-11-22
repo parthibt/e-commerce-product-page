@@ -3,16 +3,39 @@
 
 .images{
     margin: auto;
-    border-radius: 10px;
 }
 .product{
-   max-width: 375px;
     display: block;
     margin: auto;
+}
+.product-1{
+    border-radius: 10px;
 }
 .product-images{
     max-width: 300px;
     display: block;
     margin-top: 10px;
     margin-left: 10px;
+}
+@media  screen and (min-width: 600px) {
+    .images{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        
+    }
+    .product{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0;
+        align-items: center;
+        align-self: center;
+    }
+    .product-images{
+        display: flex;
+        margin: 0;
+        align-self: center;
+        justify-content: center;
+    }
 }

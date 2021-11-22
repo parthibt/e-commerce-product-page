@@ -7,6 +7,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+::before,
+::after{
+    box-sizing: border-box;
+}
 :root{
    
 --primary-Orange: hsl(26, 100%, 55%);
