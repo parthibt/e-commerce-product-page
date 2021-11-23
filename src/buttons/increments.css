@@ -1,7 +1,6 @@
 
 /*increment buttons*/
 .increment{
-    width: 270px;
     display: block;
     margin: 10px auto;
 
@@ -24,5 +23,21 @@ input{
 .btn:hover .svg use{
     fill: var(--primary-Orange-opacity);
     
+}
+
+@media screen and (min-width: 600px){
+    .increment{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    input{
+        padding: 0;
+        width: 80px;
+        font-size: 14px;
+    }
+    .postive{
+        margin-right: 20px;
+    }
 }
 

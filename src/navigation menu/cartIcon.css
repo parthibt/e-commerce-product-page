@@ -11,6 +11,7 @@
     position: relative;
     left: -49%;
     margin-top: -10px;
+    z-index: 0;
    
 }
 #notifi{
@@ -123,4 +124,24 @@
 .delete{
     cursor: pointer;
     
+}
+@media screen and (min-width: 600px){
+    .hover{
+        top: 14%;
+        left: 54%;
+    }
+    .notifi{
+        margin-top: -20px;
+    }
+    
+}
+@media screen and (min-width: 740px){
+    .hover{
+        left: 68%;
+    }
+}
+@media screen and (min-width: 1000px){
+    .hover{
+        left: 74%;
+    }
 }

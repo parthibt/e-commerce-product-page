@@ -109,6 +109,8 @@ buttonCart.addEventListener('click',()=>{
 const deleteItmes = document.querySelector('.delete');
 deleteItmes.addEventListener('click',()=>{
     showItems.style.visibility = 'hidden';
+    round.style.display = 'none';
+    yourText.style.display = 'block';
 
 });
 

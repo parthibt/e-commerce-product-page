@@ -3,8 +3,7 @@
 
 /*Add cart button*/
 .add{
-    max-width: 375px;
-    margin: auto;
+    margin: 10px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,4 +45,9 @@
 }
 .btn-check:hover{
     background: var(--primary-Orange-opacity);
+}
+@media screen and (min-width: 600px){
+  .cart{
+      padding: 10px 50px;
+  }
 }

@@ -93,7 +93,8 @@
         color: var(--Dark-grayish-blue);
         font-weight: normal;
         text-transform: capitalize;
-        position: relative;   
+        position: relative;  
+        font-size: 14px; 
     }
     .nav a::after{
         content: '';
@@ -103,7 +104,7 @@
         position: absolute;
         left: 0;
         bottom: -22px;
-        transition: all 0.3s;
+        transition: width 0.3s;
     }
     .nav a:hover::after{
         width: 100%;
@@ -111,6 +112,12 @@
     }
     .nav a:hover{
         color: var(--very-very-blue);
+    }
+    
+}
+@media screen and (min-width: 740px){
+    .nav a{
+        font-size: 16px;
     }
     
 }
