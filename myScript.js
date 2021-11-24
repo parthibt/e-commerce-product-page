@@ -28,9 +28,7 @@ leftClick.addEventListener('click', ()=>{
     i--;
     return setImag();
     
-})
-
-//image changer
+});
 
 rightclick.addEventListener('click',()=>{
   if(i>= images.length - 1) i = -1;
@@ -41,6 +39,28 @@ rightclick.addEventListener('click',()=>{
 function setImag() {
     return product.setAttribute('src', images[i])
 }
+
+const a = document.querySelector('.a');
+const b = document.querySelector('.b');
+const c = document.querySelector('.c');
+const d = document.querySelector('.d');
+
+a.addEventListener('click',()=>{
+    product.setAttribute('src',images[0]);
+
+});
+b.addEventListener('click',()=>{
+    product.setAttribute('src',images[1]);
+
+});
+c.addEventListener('click',()=>{
+    product.setAttribute('src',images[2]);
+
+});
+d.addEventListener('click',()=>{
+    product.setAttribute('src',images[3]);
+
+});
 
 //cartIcon click show no. of purhase shoes
 const cartIcon = document.querySelector('.cart-icon');

@@ -67,6 +67,10 @@
       justify-content: flex-start;
       
     }
+    .text h1{
+        font-size: 1.3rem;
+        margin: 5px 0;
+    }
     .number{
         display: flex;
         flex-direction: column;
@@ -79,6 +83,21 @@
     }
     .snaeaker{
         margin-left: 0px;
+        margin-bottom: 0;
     }
     
+}
+@media screen and (min-width: 748px){
+    .text h1{
+        font-size: 1.6rem;
+    }
+    .para{
+        font-size: 16px;
+    }
+    .snaeaker{
+        font-size: 1rem;
+    }
+    .number{
+        font-size: 1rem;
+    }
 }

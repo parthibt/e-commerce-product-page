@@ -15,7 +15,7 @@
     border-radius: 50%;
     box-shadow: 0 0 -10px 5px rgba(0, 0, 0, 0.267);
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .path{
     margin-top: 12px;
@@ -43,6 +43,7 @@
         top: 55%;
         left: 160px;
         display: none;
+        margin-left: 0;
     }
     .right-click{
         margin-left: 0px;
