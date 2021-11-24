@@ -37,6 +37,34 @@
 .right-click:hover .path path{
     stroke: var(--primary-Orange);
 }
+.model{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--black);
+    z-index: 999;
+    display: none;
+}
+#caption{
+    font-size: 4rem;
+    color: gray;
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+}
+#caption:hover{
+    color: var(--primary-Orange);
+}
+.model-content{
+    width: 300px;
+    height: 300px;
+    margin: 200px auto;
+    display: block;
+    border-radius: 10px;
+}
 
 @media screen and (min-width:600px){
     .image-changer{
@@ -44,11 +72,5 @@
         left: 160px;
         display: none;
         margin-left: 0;
-    }
-    .right-click{
-        margin-left: 0px;
-    }
-    .left-click{
-        margin-right: 260px;
     }
 }

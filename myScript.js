@@ -1,3 +1,19 @@
+//full display image
+
+
+const div = document.getElementById('model');
+const cpation = document.getElementById('caption');
+const newClass =  document.querySelector('.new-class');
+const enterItems = document.querySelector('.product');
+const product = document.querySelector('.product-1');
+const imag01 = document.getElementById('imge01');
+const imageChaneger = document.querySelector('.image-changer');
+
+product.addEventListener('click',()=>{
+  div.style.display = 'block';
+  imag01.src = product.src;
+  
+});
 
 //navigation menu
 
@@ -17,7 +33,7 @@ close.addEventListener('click',()=>{
 
 //image change menu
 const rightclick = document.querySelector('.right-click');
-const product = document.querySelector('.product-1');
+
 const leftClick = document.querySelector('.left-click');
 
 const images = ["images/image-product-1.jpg","images/image-product-2.jpg","images/image-product-3.jpg","images/image-product-4.jpg"];

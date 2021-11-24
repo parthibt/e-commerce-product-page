@@ -21,6 +21,9 @@
         padding: 3.5rem;
         
     }
+    .product-1{
+        cursor: pointer;
+    }
     .product{
         margin-right: 30px;
     }
