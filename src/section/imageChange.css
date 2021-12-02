@@ -1,11 +1,10 @@
 /*image-changer*/
 .image-changer{
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    top: 38%;
+    max-width: 325px;
+    margin: 0 auto;
     
 }
 .left-click{
@@ -13,9 +12,9 @@
     height: 40px;
     background: var(--White);
     border-radius: 50%;
-    box-shadow: 0 0 -10px 5px rgba(0, 0, 0, 0.267);
+    box-shadow: 0 0 -10px 5px rgba(0, 0, 0, 0.466);
     cursor: pointer;
-    margin-left: 30px;
+    margin-top: -260px;
 }
 .path{
     margin-top: 12px;
@@ -26,9 +25,9 @@
     height: 40px;
     background: var(--White);
     border-radius: 50%;
-    box-shadow: 0 0 -10px 5px rgba(0, 0, 0, 0.247);
+    box-shadow: 0 0 -10px 5px rgba(0, 0, 0, 0.452);
     cursor: pointer;
-    margin-left: 200px;
+    margin-top: -260px;
 
 }
 .left-click:hover .path path{
@@ -37,38 +36,11 @@
 .right-click:hover .path path{
     stroke: var(--primary-Orange);
 }
-.model{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: var(--black);
-    z-index: 999;
-    display: none;
-}
-#caption{
-    font-size: 4rem;
-    color: gray;
-    cursor: pointer;
-    position: absolute;
-    top: 10%;
-    left: 60%;
-}
-#caption:hover{
-    color: var(--primary-Orange);
-}
-.model-content{
-    width: 300px;
-    height: 300px;
-    margin: 200px auto;
-    display: block;
-    border-radius: 10px;
-}
+
 
 @media screen and (min-width:600px){
     .image-changer{
-        top: 55%;
+        top: 50%;
         left: 160px;
         display: none;
         margin-left: 0;

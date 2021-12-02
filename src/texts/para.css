@@ -18,7 +18,8 @@
 .text{
    max-width: 375px;
     margin: auto;
-    font-size: 15px;
+    font-size: 1rem;
+    overflow: hidden;
 }
 .text h1{
     max-width: 240px;

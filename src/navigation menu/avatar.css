@@ -2,9 +2,10 @@
 
 /*avatar image*/
 .photo{
-    width: 90px;
+    width: 50px;
     border-radius: 50%;
     cursor: pointer;
+    margin-left: 20px;
 }
 .photo:hover{
     border: 2px solid var(--primary-Orange);

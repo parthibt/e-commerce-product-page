@@ -2,12 +2,13 @@
 /*increment buttons*/
 .increment{
     display: block;
+    margin: auto;
+    max-width: 200px;
     margin: 10px auto;
 
 }
 input{
     text-align: center;
-    width: 200px;
     border: none;
     background: transparent;
     outline: none;
