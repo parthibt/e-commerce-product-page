@@ -48,21 +48,63 @@ const a = document.querySelector('.a');
 const b = document.querySelector('.b');
 const c = document.querySelector('.c');
 const d = document.querySelector('.d');
+const opacity0 = document.getElementById('opacity');
+const opacity1 = document.getElementById('opacity1');
+const opacity2 = document.getElementById('opacity2');
+const opacity3 = document.getElementById('opacity3');
 
 a.addEventListener('click',()=>{
     product.setAttribute('src',images[0]);
+    a.classList.toggle('thum-border');
+        b.classList.remove('thum-border');
+        c.classList.remove('thum-border');
+        d.classList.remove('thum-border');
+
+
+        opacity0.classList.add('opacity');
+        opacity1.classList.remove('opacity');
+        opacity2.classList.remove('opacity');
+        opacity3.classList.remove('opacity');
 
 });
 b.addEventListener('click',()=>{
     product.setAttribute('src',images[1]);
+    b.classList.toggle('thum-border');
+    a.classList.remove('thum-border');
+    c.classList.remove('thum-border');
+    d.classList.remove('thum-border');
+
+    opacity1.classList.add('opacity');
+    opacity0.classList.remove('opacity');
+    opacity2.classList.remove('opacity');
+    opacity3.classList.remove('opacity');
 
 });
 c.addEventListener('click',()=>{
     product.setAttribute('src',images[2]);
+    c.classList.toggle('thum-border');
+    b.classList.remove('thum-border');
+    a.classList.remove('thum-border');
+    d.classList.remove('thum-border');
+
+    opacity2.classList.add('opacity');
+    opacity1.classList.remove('opacity');
+    opacity0.classList.remove('opacity');
+    opacity3.classList.remove('opacity');
 
 });
 d.addEventListener('click',()=>{
     product.setAttribute('src',images[3]);
+    d.classList.toggle('thum-border');
+
+    b.classList.remove('thum-border');
+    c.classList.remove('thum-border');
+    a.classList.remove('thum-border');
+
+    opacity3.classList.add('opacity');
+    opacity1.classList.remove('opacity');
+    opacity2.classList.remove('opacity');
+    opacity0.classList.remove('opacity');
 
 });
 

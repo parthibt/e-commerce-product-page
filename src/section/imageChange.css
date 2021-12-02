@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 325px;
+    max-width: 255px;
     margin: 0 auto;
     
 }
@@ -14,7 +14,7 @@
     border-radius: 50%;
     box-shadow: 0 0 -10px 5px rgba(0, 0, 0, 0.466);
     cursor: pointer;
-    margin-top: -260px;
+    margin-top: -210px;
 }
 .path{
     margin-top: 12px;
@@ -27,7 +27,7 @@
     border-radius: 50%;
     box-shadow: 0 0 -10px 5px rgba(0, 0, 0, 0.452);
     cursor: pointer;
-    margin-top: -260px;
+    margin-top: -210px;
 
 }
 .left-click:hover .path path{
