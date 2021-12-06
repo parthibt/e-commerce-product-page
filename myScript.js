@@ -11,7 +11,7 @@ function closeArea(){
     copyArea.style.display = 'none';
 }
 product.addEventListener('click',copyDiv);
-copyArea.addEventListener('click',closeArea);
+copyClose.addEventListener('click',closeArea);
 
 
 

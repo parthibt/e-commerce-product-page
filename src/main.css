@@ -1,13 +1,13 @@
-@import 'buttons/addCart.css';
-@import 'buttons/increments.css';
+@import 'primary compoents/primary.css';
 @import 'navigation menu/avatar.css';
 @import 'navigation menu/cartIcon.css';
 @import 'navigation menu/header.css';
 @import 'navigation menu/menu.css';
-@import 'primary compoents/primary.css';
 @import 'section/changeImages.css';
 @import 'section/imageChange.css';
 @import 'texts/para.css';
+@import 'buttons/addCart.css';
+@import 'buttons/increments.css';
 
 
 
