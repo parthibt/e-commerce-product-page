@@ -1,6 +1,18 @@
 //full display image
-
 const product = document.querySelector('.product-1');
+const copyArea = document.querySelector('.copy');
+const copyClose = document.querySelector('.close-area')
+;
+function copyDiv(){
+    copyArea.style.display = 'block'; 
+
+}
+function closeArea(){
+    copyArea.style.display = 'none';
+}
+product.addEventListener('click',copyDiv);
+copyArea.addEventListener('click',closeArea);
+
 
 
 //navigation menu
@@ -25,7 +37,6 @@ const rightclick = document.querySelector('.right-click');
 const leftClick = document.querySelector('.left-click');
 
 const images = ["images/image-product-1.jpg","images/image-product-2.jpg","images/image-product-3.jpg","images/image-product-4.jpg"];
-
 let i =0;
 leftClick.addEventListener('click', ()=>{
     if(i <= 0) i=images.length;
@@ -44,69 +55,93 @@ function setImag() {
     return product.setAttribute('src', images[i])
 }
 
-const a = document.querySelector('.a');
-const b = document.querySelector('.b');
-const c = document.querySelector('.c');
-const d = document.querySelector('.d');
-const opacity0 = document.getElementById('opacity');
-const opacity1 = document.getElementById('opacity1');
-const opacity2 = document.getElementById('opacity2');
-const opacity3 = document.getElementById('opacity3');
+//another change image
+const nextImg1 = document.querySelector('.next-img1');
+const nextImg2 = document.querySelector('.next-img2');
+const bigImg = document.querySelector('.big-img');
+nextImg1.addEventListener('click', ()=>{
+    if(i <= 0) i=images.length;
+    i--;
+    return setBig();
+    
+});
 
-a.addEventListener('click',()=>{
+nextImg2.addEventListener('click',()=>{
+  if(i>= images.length - 1) i = -1;
+  i++;
+ return setBig();
+   
+});
+function setBig() {
+    return bigImg.setAttribute('src', images[i])
+}
+
+
+
+//desktop image
+const a = document.querySelector('.color-white');
+const b = document.querySelector('.color-white1');
+const c = document.querySelector('.color-white2');
+const d = document.querySelector('.color-white3');
+function updateA(){
     product.setAttribute('src',images[0]);
+
     a.classList.toggle('thum-border');
-        b.classList.remove('thum-border');
-        c.classList.remove('thum-border');
-        d.classList.remove('thum-border');
-
-
-        opacity0.classList.add('opacity');
-        opacity1.classList.remove('opacity');
-        opacity2.classList.remove('opacity');
-        opacity3.classList.remove('opacity');
-
-});
-b.addEventListener('click',()=>{
+    a.classList.toggle('opacity');
+    //remove the toggle other img
+    b.classList.remove('thum-border');
+    b.classList.remove('opacity');
+    c.classList.remove('thum-border');
+    c.classList.remove('opacity');
+    d.classList.remove('thum-border');
+    d.classList.remove('opacity');
+}
+function updateB(){
     product.setAttribute('src',images[1]);
+
     b.classList.toggle('thum-border');
+    b.classList.toggle('opacity');
+    //remove the toggle other img
     a.classList.remove('thum-border');
+    a.classList.remove('opacity');
     c.classList.remove('thum-border');
+    c.classList.remove('opacity');
     d.classList.remove('thum-border');
-
-    opacity1.classList.add('opacity');
-    opacity0.classList.remove('opacity');
-    opacity2.classList.remove('opacity');
-    opacity3.classList.remove('opacity');
-
-});
-c.addEventListener('click',()=>{
+    d.classList.remove('opacity');
+}
+function updateC(){
     product.setAttribute('src',images[2]);
+
     c.classList.toggle('thum-border');
-    b.classList.remove('thum-border');
+    c.classList.toggle('opacity');
+    //remove the toggle other img
     a.classList.remove('thum-border');
+    a.classList.remove('opacity');
+    b.classList.remove('thum-border');
+    b.classList.remove('opacity');
     d.classList.remove('thum-border');
-
-    opacity2.classList.add('opacity');
-    opacity1.classList.remove('opacity');
-    opacity0.classList.remove('opacity');
-    opacity3.classList.remove('opacity');
-
-});
-d.addEventListener('click',()=>{
+    d.classList.remove('opacity');
+}
+function updateD(){
     product.setAttribute('src',images[3]);
+
     d.classList.toggle('thum-border');
-
-    b.classList.remove('thum-border');
-    c.classList.remove('thum-border');
+    d.classList.toggle('opacity');
+    //remove the toggle other img
     a.classList.remove('thum-border');
+    a.classList.remove('opacity');
+    c.classList.remove('thum-border');
+    c.classList.remove('opacity');
+    b.classList.remove('thum-border');
+    b.classList.remove('opacity');
+}
 
-    opacity3.classList.add('opacity');
-    opacity1.classList.remove('opacity');
-    opacity2.classList.remove('opacity');
-    opacity0.classList.remove('opacity');
+a.addEventListener('click',updateA);
+b.addEventListener('click',updateB);
+c.addEventListener('click',updateC);
+d.addEventListener('click',updateD);
 
-});
+
 
 //cartIcon click show no. of purhase shoes
 const cartIcon = document.querySelector('.cart-icon');
