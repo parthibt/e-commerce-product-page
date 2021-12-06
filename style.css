@@ -367,7 +367,7 @@ img{
     position: absolute;
     top:0;
     left: 0;
-    display: block;
+    display: none;
 }
 
 .copy-img{
@@ -447,6 +447,39 @@ img{
 }
 
 /*hole area image color*/
+
+.white1{
+    width: 65px;
+    height: 65px;  
+    border-radius: 12px;
+    position: absolute;
+}
+
+.copy-white{
+    background: rgba(255, 255, 255, 0.582);
+    border: 2px solid var(--primary-Orange);
+}
+
+.white2{
+    width: 65px;
+    height: 65px;  
+    border-radius: 12px;
+    position: absolute;
+}
+
+.white3{
+    width: 65px;
+    height: 65px;  
+    border-radius: 12px;
+    position: absolute;
+}
+
+.white4{
+    width: 65px;
+    height: 65px;  
+    border-radius: 12px;
+    position: absolute;
+}
 
 /*change images*/
 

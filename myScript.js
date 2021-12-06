@@ -59,6 +59,10 @@ function setImag() {
 const nextImg1 = document.querySelector('.next-img1');
 const nextImg2 = document.querySelector('.next-img2');
 const bigImg = document.querySelector('.big-img');
+const white1Color = document.querySelector('.white1'); 
+const white2Color = document.querySelector('.white2'); 
+const white3Color = document.querySelector('.white3'); 
+const white4Color = document.querySelector('.white4'); 
 nextImg1.addEventListener('click', ()=>{
     if(i <= 0) i=images.length;
     i--;
@@ -73,8 +77,50 @@ nextImg2.addEventListener('click',()=>{
    
 });
 function setBig() {
-    return bigImg.setAttribute('src', images[i])
+    if(images[i] == "images/image-product-1.jpg"){
+        white1Color.classList.add('copy-white');
+
+        white2Color.classList.remove('copy-white');
+        white3Color.classList.remove('copy-white');
+        white4Color.classList.remove('copy-white');
+    }else if(images[i] == "images/image-product-2.jpg"){
+        white2Color.classList.add('copy-white');
+
+        white1Color.classList.remove('copy-white');
+        white3Color.classList.remove('copy-white');
+        white4Color.classList.remove('copy-white');
+    }else if(images[i] == "images/image-product-3.jpg"){
+        white3Color.classList.add('copy-white');
+
+        white1Color.classList.remove('copy-white');
+        white2Color.classList.remove('copy-white');
+        white4Color.classList.remove('copy-white');
+    }else if(images[i] == "images/image-product-4.jpg"){
+        white4Color.classList.add('copy-white');
+
+        white1Color.classList.remove('copy-white');
+        white3Color.classList.remove('copy-white');
+        white2Color.classList.remove('copy-white');
+    }
+    return bigImg.setAttribute('src', images[i]);
+
+     
 }
+  
+function updtateColorBorder(){
+    if(images[i] == "images/image-product-1.jpg"){
+        white1Color.classList.add('copy-white');
+
+        white2Color.classList.remove('copy-white');
+        white3Color.classList.remove('copy-white');
+        white4Color.classList.remove('copy-white');
+    }
+    
+}
+updtateColorBorder();
+
+  
+
 
 
 
@@ -83,6 +129,18 @@ const a = document.querySelector('.color-white');
 const b = document.querySelector('.color-white1');
 const c = document.querySelector('.color-white2');
 const d = document.querySelector('.color-white3');
+if(images[i] == "images/image-product-1.jpg"){
+    a.classList.toggle('thum-border');
+    a.classList.toggle('opacity');
+    //remove the toggle other img
+    b.classList.remove('thum-border');
+    b.classList.remove('opacity');
+    c.classList.remove('thum-border');
+    c.classList.remove('opacity');
+    d.classList.remove('thum-border');
+    d.classList.remove('opacity');
+
+}
 function updateA(){
     product.setAttribute('src',images[0]);
 
